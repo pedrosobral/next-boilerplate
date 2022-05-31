@@ -3,6 +3,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import styled from '@emotion/styled'
+
+const Button = styled.button`
+  color: hotpink;
+`
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -16,6 +22,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <Button>PINK BUTTON</Button>
 
         <p className={styles.description}>
           Get started by editing{' '}
