@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled'
 
 export const Wrapper = styled.main`
   display: flex;
@@ -11,7 +11,7 @@ export const Wrapper = styled.main`
   padding: 4rem;
   background-color: #222222;
   color: white;
-`;
+`
 
 export const Logo = styled.img`
   width: 15rem;
