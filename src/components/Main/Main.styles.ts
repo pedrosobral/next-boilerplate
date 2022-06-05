@@ -21,6 +21,7 @@ export const Logo = styled.img`
 export const Title = styled.h1`
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  max-lines: 2;
 `
 
 export const Description = styled.p`
