@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import Home from '../src/pages/index';
+import Home from '../src/pages';
 import '@testing-library/jest-dom';
 
 describe('Home', () => {
-  it('renders a heading', () => {
-    render(<Home />)
+  it('render correct background color', () => {
+    const { container } = render(<Home />)
 
-    const heading = screen.getByRole('heading', { name: /welcome to next\.js!/i })
-
-    expect(heading).toBeInTheDocument()
+    expect(container.firstChild).toHaveStyle({
+      'background-color': '#222222'
+    })
   })
 })
